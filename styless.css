@@ -474,3 +474,48 @@ input{
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: blue;
+    }
+    .header{
+        display: none;
+    }
+    .main{
+        height: 400vh;
+        width: 200vh;
+        background-size: cover;
+        background-position: center center;
+    }
+    #hi{
+        font-size: 10em;
+    }
+    .introduction{
+        font-size: 3em;
+        width: 600px;
+    }
+    .aboutMe{
+        height: 100vh;
+        width: 200vh;
+    }
+    .about, .tch{
+        width: 50vh;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .header{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
