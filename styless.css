@@ -10,8 +10,8 @@
 }
 body{
     position: unset;
+    -webkit-text-size-adjust: 100%;
 }
-
 .header{    
     align-items: center;
     display: flex;
@@ -475,47 +475,60 @@ input{
     -ms-transform: scale(1.5);
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width:320px) {
     body{
         background-color: blue;
+        -webkit-text-size-adjust:inherit;
+        line-height: 1.6;
     }
     .header{
         display: none;
-    }
-    .main{
-        height: 400vh;
-        width: 200vh;
-        background-size: cover;
-        background-position: center center;
     }
     #hi{
-        font-size: 10em;
+        font-size: 8em;
     }
     .introduction{
-        font-size: 3em;
-        width: 600px;
+        font-size: 2em;
+        width: 100vh;
+    }
+    .main{
+       height: 200vh;
+       width: 200vh;
     }
     .aboutMe{
-        height: 100vh;
+        height: 200vh;
         width: 200vh;
+        display: flex;
+        flex-direction: row;
     }
     .about, .tch{
-        width: 50vh;
+        width: 50%;
+        height: 80vh;
     }
-
-}
-@media only screen and (min-width: 600px) {
-    .header{
-        display: none;
+    #me{
+        font-size: 4em;
     }
-
+    #text p{
+        font-size: 1.5em;
+    }
 }
-@media only screen and (min-width: 768px) {
-
+@media (min-width:480px) { 
+    body{
+        background-color: green;
+    }
 }
-@media only screen and (min-width: 992px) {
-
+@media (min-width:600px) { 
+    body{
+        background-color: yellow;
+    }
 }
-@media only screen and (min-width: 1200px) {
-
+@media (min-width:801px) { 
+    body{
+        background-color: purple;
+    }
+ }
+@media (min-width:1025px) { 
+    body{
+        background-color: black;
+    }
 }
