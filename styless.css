@@ -484,33 +484,28 @@ input{
     .header{
         display: none;
     }
+    .main{
+        height: 100vh;
+    }
     #hi{
-        font-size: 8em;
+        font-size: 2em;
     }
     .introduction{
-        font-size: 2em;
-        width: 100vh;
-    }
-    .main{
-       height: 200vh;
-       width: 200vh;
+        font-size: .9em;
+        width: auto;
     }
     .aboutMe{
         height: 200vh;
-        width: 200vh;
-        display: flex;
-        flex-direction: row;
     }
     .about, .tch{
-        width: 50%;
-        height: 80vh;
-    }
-    #me{
-        font-size: 4em;
+        height: 70vw ;
+        width: 80vw;
     }
     #text p{
-        font-size: 1.5em;
+        font-size: .8em;
+        width: 70vw;
     }
+
 }
 @media (min-width:480px) { 
     body{
