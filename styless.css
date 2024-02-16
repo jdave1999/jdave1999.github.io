@@ -74,17 +74,17 @@ body{
     background-position: center center;
     display: flex;
     flex-direction: column;
-    height: 50vw;
+    height: 100vh;
     margin: 0; 
     top: 0;
-    width: 100%;
+    width: 220vh;
 }
 #main{
-    height: 50vw;
+    height: 20vh;
     margin: 80px 0 0 20px;
     mix-blend-mode: difference;
     padding: 10px;
-    width: fit-content;
+    width: 76vh;
     
 }
 #hi{
@@ -97,7 +97,7 @@ body{
     letter-spacing: normal;
     margin: 40px 0 0 40px;
     overflow: hidden;
-    width: fit-content;
+    width: 73vh;
     white-space: nowrap;
 }
 @keyframes cursor{
@@ -110,13 +110,14 @@ body{
 .introduction{
     color: rgba(245, 245, 245, 0.645);
     font-style: oblique;
-    font-size: 1.2em;
     margin: 20px 20px 0 40px;
-    width: 350px;   
+    width: 70vh;   
+    height: 30vh;
 }
 #message{
     color: rgba(245, 245, 245, 0.645); 
     margin-top: 10px; 
+    font-size: 1.2em;
 }
 .logo{
     display: flex;
@@ -474,56 +475,28 @@ input{
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
 }
-
-@media (min-width:320px) {
-    body{
-        background-color: blue;
-        -webkit-text-size-adjust:inherit;
-        line-height: 1.6;
-    }
+@media screen and (min-width: 360px) and (max-width: 480px){
     .header{
         display: none;
     }
+    .header.hidden{
+        display: none;
+    }
     .main{
-        height: 100vh;
+        height: 200%;
+        width: 100%;
+    }
+    #main{
+        height: 50%;
+        margin: 0;
+        width: 50%;
     }
     #hi{
         font-size: 2em;
     }
     .introduction{
-        font-size: .9em;
-        width: auto;
+        font-size: .5em;
+        width: 100%;
     }
-    .aboutMe{
-        height: 200vh;
-    }
-    .about, .tch{
-        height: 70vw ;
-        width: 80vw;
-    }
-    #text p{
-        font-size: .8em;
-        width: 70vw;
-    }
-
-}
-@media (min-width:480px) { 
-    body{
-        background-color: green;
-    }
-}
-@media (min-width:600px) { 
-    body{
-        background-color: yellow;
-    }
-}
-@media (min-width:801px) { 
-    body{
-        background-color: purple;
-    }
- }
-@media (min-width:1025px) { 
-    body{
-        background-color: black;
-    }
+    
 }
